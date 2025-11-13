@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 210 100% 97%;
+    --foreground: 215 25% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 15%;
+
+    --primary: 210 90% 45%;
+    --primary-foreground: 0 0% 100%;
+    
+    --sky: 200 100% 60%;
+    --ocean: 210 100% 35%;
+    --navy: 220 70% 25%;
+
+    --secondary: 210 25% 92%;
+    --secondary-foreground: 215 25% 15%;
+
+    --muted: 210 25% 95%;
+    --muted-foreground: 215 15% 45%;
+
+    --accent: 200 90% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 85% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 20% 88%;
+    --input: 210 20% 88%;
+    --ring: 210 90% 45%;
+
+    --radius: 0.75rem;
+
+    --gradient-sky: linear-gradient(135deg, hsl(200 100% 60%) 0%, hsl(210 90% 45%) 100%);
+    --gradient-ocean: linear-gradient(180deg, hsl(210 100% 97%) 0%, hsl(200 100% 95%) 100%);
+    --shadow-soft: 0 2px 8px -2px hsl(210 90% 45% / 0.12);
+    --shadow-card: 0 4px 16px -4px hsl(210 90% 45% / 0.15);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .dark {
+    --background: 220 30% 8%;
+    --foreground: 210 40% 98%;
+
+    --card: 220 25% 12%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 220 25% 12%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 90% 55%;
+    --primary-foreground: 0 0% 100%;
+    
+    --sky: 200 100% 65%;
+    --ocean: 210 100% 45%;
+    --navy: 220 70% 30%;
+
+    --secondary: 220 20% 18%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 220 20% 16%;
+    --muted-foreground: 215 15% 65%;
+
+    --accent: 200 90% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 20% 20%;
+    --input: 220 20% 20%;
+    --ring: 210 90% 55%;
+    
+    --gradient-sky: linear-gradient(135deg, hsl(200 100% 65%) 0%, hsl(210 90% 55%) 100%);
+    --gradient-ocean: linear-gradient(180deg, hsl(220 30% 8%) 0%, hsl(220 25% 12%) 100%);
+    --shadow-soft: 0 2px 8px -2px hsl(0 0% 0% / 0.3);
+    --shadow-card: 0 4px 16px -4px hsl(0 0% 0% / 0.4);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
