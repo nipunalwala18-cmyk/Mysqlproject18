@@ -1,0 +1,1 @@
+import ex from 'express'; import {getProfile} from '../controllers/profilesController'; const r=ex.Router(); r.get('/:userId',getProfile); export default r;

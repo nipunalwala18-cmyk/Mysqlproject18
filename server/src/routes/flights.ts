@@ -1,0 +1,1 @@
+import ex from 'express'; import {getFlights} from '../controllers/flightsController'; const r=ex.Router(); r.get('/',getFlights); export default r;

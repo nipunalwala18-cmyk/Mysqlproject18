@@ -1,0 +1,1 @@
+import {db} from '../config/db'; export const getAirports=async(_,res)=>{const[r]=await db.query('SELECT * FROM airports');res.json(r);};

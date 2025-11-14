@@ -1,0 +1,1 @@
+import ex from 'express'; import {getAircraft} from '../controllers/aircraftController'; const r=ex.Router(); r.get('/',getAircraft); export default r;

@@ -1,0 +1,1 @@
+import ex from 'express'; import {bookFlight,getUserBookings,cancelBooking} from '../controllers/bookingsController'; const r=ex.Router(); r.post('/',bookFlight); r.get('/:userId',getUserBookings); r.delete('/:id',cancelBooking); export default r;

@@ -1,0 +1,1 @@
+import {db} from '../config/db'; export const getProfile=async(req,res)=>{const[r]=await db.query('SELECT * FROM profiles WHERE id=?',[req.params.userId]);res.json(r[0]||{});};

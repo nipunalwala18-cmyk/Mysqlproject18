@@ -1,0 +1,1 @@
+import {db} from '../config/db'; export const getRoutes=async(_,res)=>{const[r]=await db.query('SELECT * FROM routes');res.json(r);};

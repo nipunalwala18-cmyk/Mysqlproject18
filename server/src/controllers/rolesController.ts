@@ -1,0 +1,1 @@
+import {db} from '../config/db'; export const getUserRoles=async(req,res)=>{const[r]=await db.query('SELECT * FROM user_roles WHERE user_id=?',[req.params.userId]);res.json(r);};

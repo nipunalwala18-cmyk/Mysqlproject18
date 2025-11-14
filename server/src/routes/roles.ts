@@ -1,0 +1,1 @@
+import ex from 'express'; import {getUserRoles} from '../controllers/rolesController'; const r=ex.Router(); r.get('/:userId',getUserRoles); export default r;
